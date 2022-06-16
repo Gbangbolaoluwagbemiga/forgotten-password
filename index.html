@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forgot password</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-size: 30px;
+        width: auto;
+      }
+      img {
+        width: 30%;
+      }
+      form {
+        width: 70%;
+        margin: auto;
+        margin-top: 30%;
+      }
+      .btn {
+        font-size: 25px;
+        background-color: red;
+        text-align: center;
+        width: 40%;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 30%;
+      }
+
+      input {
+        width: 100%;
+        height: 100%;
+      }
+      @media screen and (min-width: 500px) {
+        form {
+          margin: auto;
+          margin-top: 20%;
+        }
+        label {
+          font-size: 40px;
+        }
+        .btn {
+          font-size: 30px;
+          width: 20%;
+          margin-left: 40%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <img src="/Forgotten/1.jpg" alt="Logo" /> -->
+    <form>
+      <label for="email">Email:</label><br />
+      <input type="email" placeholder="Enter your email..." required />
+    </form>
+    <a href="https://sub-project1.vercel.app/"
+      ><button class="btn">Submit</button></a
+    >
+
+    <script>
+      const button = document.querySelector(".btn");
+      button.addEventListener("click", function () {
+        alert("A password has been sent to your mail");
+      });
+    </script>
+  </body>
+</html>
